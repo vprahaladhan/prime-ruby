@@ -5,13 +5,13 @@ def prime?(number)
 
   if number <= 1 then
     prime_no = false
-  else 
-    until divider == number do
+  else
+    while divider < number do 
       if number.modulo(divider) == 0 then
         prime_no = false
-        divider += 1
         break
       end
+      divider += 1
     end
   end
 
